@@ -3,14 +3,14 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
-import Work from "./components/Work/Work"; // This is your Project Page
+import Work from "./components/Work/Work";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer"; 
 
 import './App.css';
 
-// We define BlurBlob here to ensure it works perfectly without file import errors
+// Internal BlurBlob Component
 const BlurBlob = ({ position = { top: "50%", left: "50%" }, size = { width: "300px", height: "300px" } }) => {
   return (
     <div
@@ -43,14 +43,14 @@ const App = () => {
 
       {/* Main content */}
       <div className="relative pt-20 z-10">
-        <Navbar />
+        {/* <Navbar />
         <About />
         <Skills />
-        {/* <Experience /> */}
-        <Work /> {/* This renders your Projects */}
+        <Experience /> */}
+        {/* <Work />
         <Education />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </div>
     </div>
   );

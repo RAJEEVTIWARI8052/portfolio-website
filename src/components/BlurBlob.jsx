@@ -49,10 +49,10 @@ const App = () => {
         <About />
         <Skills />
         {/* <Experience /> */}
-        <Education />
+         <Education />
         <Work />
       
-        <Contact />
+        <Contact /> 
         <Footer />
       </div>
     </div>
